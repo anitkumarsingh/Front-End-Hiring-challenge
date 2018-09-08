@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End hiring Challenge-By Anit Kumar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="model.js"></script>
+</head>
+<body>
+        <header>
+                <nav>
+                  <ul>
+                    <li class="left"><a href="#"><img id="header-img" src="http://www.myresumeweb.pe.hu/wp-content/uploads/2018/09/logo.png" width=130px height:auto></a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Why Plate IQ</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li class="right"><button class="get-demo">Get a Demo</button></li>
+                    <li class="right"><button class="login-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button></li>
+                  </ul>
+                </nav>
+                </header>
+              <!-- <div class="slider">
+                <div class="left-colomn">
+                  <div class="content">
+                  <h5>AUTOMATED INVOICE PROCESSING</h5>
+                  <h1>Easily Manage invoices</h1>
+                  <p>Save time with automated<span>invoice processing, payments and more.</span></p><br/>
+                  <input type="email" name="email" placeholder="your@gmail.com" />
+                  <button type="submit">Get a Demo</button>
+                  </div>
+                </div>
+                <div class="img-container">
+                  <img src="http://www.myresumeweb.pe.hu/wp-content/uploads/2018/09/right_pic.png" />
+                </div>
+              </div>
+               -->
+              <div class="row">
+                <div class="columnleft">
+                    <div class="card">
+                        <h5>AUTOMATED INVOICE PROCESSING</h5>
+                        <!-- <div class="typewriter"> -->
+                            <h1 style="color: #0043F5;font-size:50px;">Easily Manage Invoices</h1>
+                        <!-- </div> -->
+                        <p>Save time with automated <span>invoice processing, payments and more.</span></p><br/>
+                        <form class="form-container">
+                            <input type="email" name="email" placeholder="your@gmail.com" required/>
+                            <button type="submit">Get a Demo</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="columnright">
+                  <div class="cards">
+                    <img src="http://www.myresumeweb.pe.hu/wp-content/uploads/2018/09/right_pic.png" />
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Login model form -->
+              <div id="id01" class="modal">
+                <form class="modal-content animate" action="#">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="http://www.myresumeweb.pe.hu/wp-content/uploads/2018/09/logo.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button id ="login-btn"type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+    
+</body>
+</html>
